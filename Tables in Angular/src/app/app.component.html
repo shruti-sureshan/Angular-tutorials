@@ -1,0 +1,19 @@
+<h1>Employee Table</h1>
+<br>
+
+<table border="1">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+
+</table>
+
+<router-outlet></router-outlet>
